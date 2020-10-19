@@ -44,34 +44,6 @@
                     </div>
                 </div>
             </div>
-            <div class="our-news__slider-second swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="our-news__slide swiper-slide">
-                        @include('cakeshop.components.card',['class' => 'our-news__card'])
-                    </div>
-                    <div class="our-news__slide swiper-slide">
-                        @include('cakeshop.components.card',['class' => 'our-news__card'])
-                    </div>
-                    <div class="our-news__slide swiper-slide">
-                        @include('cakeshop.components.card',['class' => 'our-news__card'])
-                    </div>
-                    <div class="our-news__slide swiper-slide">
-                        @include('cakeshop.components.card',['class' => 'our-news__card'])
-                    </div>
-                    <div class="our-news__slide swiper-slide">
-                        @include('cakeshop.components.card',['class' => 'our-news__card'])
-                    </div>
-                    <div class="our-news__slide swiper-slide">
-                        @include('cakeshop.components.card',['class' => 'our-news__card'])
-                    </div>
-                    <div class="our-news__slide swiper-slide">
-                        @include('cakeshop.components.card',['class' => 'our-news__card'])
-                    </div>
-                    <div class="our-news__slide swiper-slide">
-                        @include('cakeshop.components.card',['class' => 'our-news__card'])
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>

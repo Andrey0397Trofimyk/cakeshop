@@ -2141,9 +2141,6 @@ textarea {
   height: auto;
   margin: 20px 0;
 }
-.our-news__slider-second {
-  display: none;
-}
 .our-news__slide {
   display: flex;
   flex-direction: column;

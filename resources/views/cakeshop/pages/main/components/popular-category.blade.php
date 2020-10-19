@@ -15,6 +15,7 @@
                 </button>
             </div>
         </div>
+        <!-- На даний момент користуюсь без for Pretty ламає структуру -->
         <div class="popular-category__swiper">
             <div class="popular-category__slider-first swiper-container">
                 <div class="swiper-wrapper">

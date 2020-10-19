@@ -1,4 +1,3 @@
-import { actionModal } from "../base/actionModal";
 import { seeWidthWindowForModal } from "../base/seeWidthWindowForModal";
 
 $(document).on("click", ".js--trigger-burger", function(event) {

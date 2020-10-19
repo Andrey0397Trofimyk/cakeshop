@@ -21213,23 +21213,6 @@ $(document).ready(function () {
 
 /***/ }),
 
-/***/ "./resources/js/base/actionModal.js":
-/*!******************************************!*\
-  !*** ./resources/js/base/actionModal.js ***!
-  \******************************************/
-/*! exports provided: actionModal */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "actionModal", function() { return actionModal; });
-var actionModal = function actionModal(l) {
-  var ml = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "100px";
-  var mt = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "50px";
-};
-
-/***/ }),
-
 /***/ "./resources/js/base/seeWidthWindowForModal.js":
 /*!*****************************************************!*\
   !*** ./resources/js/base/seeWidthWindowForModal.js ***!
@@ -21417,9 +21400,7 @@ $(document).on("click", ".js--trigger-main-modal", function (event) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _base_actionModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../base/actionModal */ "./resources/js/base/actionModal.js");
-/* harmony import */ var _base_seeWidthWindowForModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../base/seeWidthWindowForModal */ "./resources/js/base/seeWidthWindowForModal.js");
-
+/* harmony import */ var _base_seeWidthWindowForModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../base/seeWidthWindowForModal */ "./resources/js/base/seeWidthWindowForModal.js");
 
 $(document).on("click", ".js--trigger-burger", function (event) {
   event.preventDefault();
@@ -21479,7 +21460,7 @@ $(document).on("click", ".js--dropdown-language", function (event) {
   }
 });
 $(window).on("resize", function () {
-  Object(_base_seeWidthWindowForModal__WEBPACK_IMPORTED_MODULE_1__["seeWidthWindowForModal"])($(".languages"));
+  Object(_base_seeWidthWindowForModal__WEBPACK_IMPORTED_MODULE_0__["seeWidthWindowForModal"])($(".languages"));
 });
 
 /***/ }),
@@ -21551,6 +21532,7 @@ var ourNews = new Swiper["default"](".our-news__slider-first", {
   slidesPerColumn: 1,
   watchOverflow: "true",
   slidesPerColumnFill: "row",
+  slidesOffsetAfter: 80,
   navigation: {
     nextEl: ".our-news__arrow--next",
     prevEl: ".our-news__arrow--prev"
@@ -21572,21 +21554,7 @@ var ourNews = new Swiper["default"](".our-news__slider-first", {
     }
   }
 });
-Object(_swiperToLongTerm__WEBPACK_IMPORTED_MODULE_0__["resizeSliderColumn"])($(".our-news__slider-first"), 5); // const ourNewsSecond = new Swiper.default(".our-news__slider-second", {
-//     direction: "horizontal",
-//     slidesPerView: 1.4,
-//     spaceBetween: 15,
-// watchOverflow: "true",
-//     breakpoints: {
-//         460: { slidesPerView: 2 },
-//         768: { slidesPerView: 3 },
-//         992: { slidesPerView: 4 },
-//         1560: { slidesPerView: 5 }
-//     }
-// });
-// ourNews.controller.control = ourNewsSecond;
-// ourNewsSecond.controller.control = ourNews;
-// popular-category
+Object(_swiperToLongTerm__WEBPACK_IMPORTED_MODULE_0__["resizeSliderColumn"])($(".our-news__slider-first"), 5); // popular-category
 
 var popularCategoryFisrt = new Swiper["default"](".popular-category__slider-first", {
   direction: "horizontal",
@@ -21595,6 +21563,7 @@ var popularCategoryFisrt = new Swiper["default"](".popular-category__slider-firs
   spaceBetween: 15,
   watchOverflow: "true",
   slidesPerColumnFill: "row",
+  slidesOffsetAfter: 80,
   navigation: {
     nextEl: ".popular-category__arrow--next",
     prevEl: ".popular-category__arrow--prev"
@@ -21618,32 +21587,14 @@ var popularCategoryFisrt = new Swiper["default"](".popular-category__slider-firs
     }
   }
 });
-Object(_swiperToSingleTerm__WEBPACK_IMPORTED_MODULE_1__["resizeSliderRow"])($(".popular-category__slider-first")); // resizeSlider($(".popular-category__slider-first"));
-// resizeSlider($(".popular-category__slider-first"));
-// const popularCategorySecond = new Swiper.default(
-//     ".popular-category__slider-second",
-//     {
-//         direction: "horizontal",
-//         slidesPerView: 1.4,
-//         spaceBetween: 15,
-//         watchOverflow: "true",
-//         breakpoints: {
-//             460: { slidesPerView: 2 },
-//             768: { slidesPerView: 3 },
-//             992: { slidesPerView: 4 },
-//             1560: { slidesPerView: 5 }
-//         }
-//     }
-// );
-// popularCategoryFisrt.controller.control = popularCategorySecond;
-// popularCategorySecond.controller.control = popularCategoryFisrt;
-// popular-product
+Object(_swiperToSingleTerm__WEBPACK_IMPORTED_MODULE_1__["resizeSliderRow"])($(".popular-category__slider-first")); // popular-product
 
 var popularProduct = new Swiper["default"](".popular-products__slider", {
   direction: "horizontal",
   slidesPerView: 1.4,
   spaceBetween: 15,
   watchOverflow: "true",
+  slidesOffsetAfter: 80,
   navigation: {
     nextEl: ".popular-products__arrow--prev",
     prevEl: ".popular-products__arrow--next"
