@@ -1,0 +1,27 @@
+.viber {
+    display: flex;
+    align-content: center;
+
+    &__text {
+        width: 65px;
+        height: 35px;
+        font-size: 12px;
+        line-height: 13px;
+        text-align: left;
+    }
+    &__icon {
+        width: 36px;
+        height: 36px;
+        margin-right: 5px;
+        fill: #8e24aa;
+    }
+}
+
+@media #{$screen-min-1080} {
+    .viber {
+        &__text {
+            width: 75px;
+            font-size: 14px;
+        }
+    }
+}

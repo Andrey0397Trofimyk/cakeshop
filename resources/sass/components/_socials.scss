@@ -1,0 +1,26 @@
+.socials {
+    display: flex;
+    align-items: center;
+    &__icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+    }
+}
+@media #{$screen-min-1200} {
+    .socials {
+        &__icon {
+            width: 34px;
+            height: 34px;
+        }
+    }
+}
+@media #{$screen-min-1560} {
+    .socials {
+        &__icon {
+            width: 36px;
+            height: 36px;
+            margin-right: 10px;
+        }
+    }
+}

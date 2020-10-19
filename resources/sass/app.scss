@@ -1,0 +1,27 @@
+@import "~swiper/swiper-bundle.css";
+
+@import "base/variables";
+@import "base/mix";
+@import "base/reset";
+@import "base/fonts";
+@import "base/customs";
+@import "base/layouts";
+
+@import "components/basket";
+@import "components/choice-viber";
+@import "components/socials";
+@import "components/number";
+@import "components/online-shop";
+@import "components/real-shop";
+@import "components/card";
+@import "components/slider";
+
+@import "layouts/header/index";
+@import "layouts/header/laptop-navbar";
+@import "layouts/footer/index";
+
+@import "pages/our-news";
+@import "pages/popular-category";
+@import "pages/popular-products";
+@import "pages/why-we";
+@import "pages/information";

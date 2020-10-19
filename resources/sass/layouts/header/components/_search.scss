@@ -1,0 +1,121 @@
+.search {
+    display: flex;
+    .active {
+        svg {
+            fill: #dbdbdb;
+        }
+    }
+    &__dropdown {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        // height: calc(100vh - 42px);
+        // margin-top: 42px;
+        padding-top: 100px;
+        background-color: #ffffff;
+    }
+    &__form {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        margin: 0 auto;
+        padding: 0 10px;
+        border-bottom: 0.5px solid #e3e3e3;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 1px;
+            background-color: #1bb71b;
+            transition-duration: 0.5s;
+        }
+    }
+    .active-form {
+        &:after {
+            left: 0;
+            width: 100%;
+        }
+        .search__icon {
+            fill: #1bb71b;
+        }
+    }
+    &__input {
+        font-size: 18px;
+        width: calc(100% - 30px);
+        margin-right: 10px;
+        line-height: 30px;
+        &::placeholder {
+            color: #c4c4c4;
+        }
+    }
+    &__online-shop {
+        margin-top: 40px;
+    }
+    &__icon {
+        width: 22px;
+        height: 22px;
+        opacity: 0.5;
+        &--front {
+            opacity: 1;
+        }
+    }
+}
+@media #{$screen-min-420} {
+    .search {
+        &__form {
+            width: 250px;
+        }
+    }
+}
+@media #{$screen-min-500} {
+    .search {
+        &__form {
+            width: 300px;
+        }
+    }
+}
+@media #{$screen-min-576} {
+    .search {
+        &__form {
+            width: 350px;
+        }
+    }
+}
+@media #{$screen-min-992} {
+    .search {
+        &__dropdown {
+            position: static;
+            display: flex !important;
+            height: 20px !important;
+            padding: 0;
+            margin: 0 !important;
+        }
+        &__button {
+            display: none;
+            order: 2;
+        }
+        &__form {
+            width: 250px;
+            order: 1;
+        }
+        &__online-shop {
+            display: none;
+        }
+    }
+}
+@media #{$screen-min-1080} {
+    .search {
+        &__icon {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.navbar {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    &__item {
+        border-bottom: 1px solid #f5f5f5;
+        &:first-child {
+            border-top: 1px solid #f5f5f5;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        padding: 8px 0;
+    }
+    .active-navbar-link {
+        svg {
+            fill: #15a0b6;
+        }
+        p {
+            font-weight: 400;
+            color: #15a0b6;
+        }
+    }
+    &__submenu {
+        display: none;
+        overflow: hidden;
+    }
+    .active-submenu {
+        display: none;
+    }
+    &__icon {
+        width: 25px;
+        height: 25px;
+        margin: 0 10px;
+    }
+    &__title {
+        width: 200px;
+        font-size: 19px;
+        overflow: hidden;
+    }
+}
+.submenu {
+    position: relative;
+    margin-left: 45px;
+    &__item {
+        padding: 5px 0;
+        overflow: hidden;
+    }
+    &__link {
+        font-size: 16px;
+    }
+    .active-submenu-link {
+        font-weight: bold;
+    }
+}
+@media #{$screen-min-420} {
+    .submenu {
+    }
+}

@@ -1,0 +1,121 @@
+.why-we {
+    &__container {
+        margin: 60px auto 60px auto;
+    }
+    &__card {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    &__title {
+        margin-bottom: 10px;
+        p {
+            font-weight: 400;
+            font-size: 22px;
+        }
+    }
+    &__form {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 130px;
+        margin: 20px 0;
+        text-align: center;
+    }
+    &__circle {
+        padding: 15px;
+        border-radius: 50%;
+        &--green {
+            background-color: #00939b;
+        }
+        &--orange {
+            background-color: #df8f46;
+        }
+        &--bodily {
+            background-color: #e2ceb3;
+        }
+        &--pink {
+            background-color: #fe798a;
+        }
+    }
+    &__icon {
+        width: 50px;
+        height: 50px;
+        fill: #fff;
+    }
+    &__icon-background {
+        position: absolute;
+        top: 12px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        fill: rgba($color: #000000, $alpha: 0.02);
+        z-index: -1;
+    }
+    &__text {
+        flex: 1 1 auto;
+        width: 150px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        // white-space: nowrap;
+        // overflow: hidden;
+    }
+}
+@media #{$screen-min-420} {
+    .why-we {
+        &__title {
+            font-size: 24px;
+        }
+        &__form {
+            width: 160px;
+        }
+        &__icon {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+@media #{$screen-min-500} {
+    .why-we {
+        &__card {
+            flex-wrap: nowrap;
+        }
+        &__form {
+            width: 120px;
+        }
+        &__icon {
+            width: 50px;
+            height: 50px;
+        }
+        &__text {
+            font-size: 15px;
+        }
+    }
+}
+@media #{$screen-min-768} {
+    .why-we {
+        &__form {
+            width: 150px;
+        }
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
+@media #{$screen-min-992} {
+    .why-we {
+        &__title {
+            font-size: 26px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+        &__icon {
+            width: 90px;
+            height: 90px;
+        }
+    }
+}
