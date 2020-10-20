@@ -10,7 +10,7 @@
                         <use xlink:href="/img/icons/panel.svg#food-print"></use>
                     </svg>
                 </div>
-                <p class='main__text'>Харчовий друк</p>
+                <span class='main__text'>Харчовий друк</span>
             </a>
             <div class="main__form js--trigger-main-modal">
                 <div class="main__submenu navbar-submenu">
@@ -23,7 +23,7 @@
                                 <use xlink:href="/img/icons/panel.svg#food-print"></use>
                             </svg>
                         </div>
-                        <p class='navbar-submenu__text'>Харчовий друк</p>
+                        <span class='navbar-submenu__text'>Харчовий друк</span>
                     </div>
                     <ul class="navbar-submenu__list">
                         <li class="navbar-submenu__item"><a href="#" class='navbar-submenu__link'>Вафельная и сахарная печать</a></li>
@@ -49,7 +49,7 @@
                         <use xlink:href="/img/icons/panel.svg#decor"></use>
                     </svg>
                 </div>
-                <p class='main__text'>Декор</p>
+                <span class='main__text'>Декор</span>
             </a>
             <div class="main__form js--trigger-main-modal">
                 <div class="main__submenu navbar-submenu">
@@ -62,7 +62,7 @@
                                 <use xlink:href="/img/icons/panel.svg#decor"></use>
                             </svg>
                         </div>
-                        <p class='navbar-submenu__text'>Декор</p>
+                        <span class='navbar-submenu__text'>Декор</span>
                     </div>
                     <ul class="navbar-submenu__list">
                         <li class="navbar-submenu__item"><a href="#" class='navbar-submenu__link'>Килимки для айсінгом</a></li>
@@ -89,7 +89,7 @@
                         <use xlink:href="/img/icons/panel.svg#ingredient"></use>
                     </svg>
                 </div>
-                <p class='main__text'>Інгредієнти</p>
+                <span class='main__text'>Інгредієнти</span>
             </a>
             <div class="main__form js--trigger-main-modal">
                 <div class="main__submenu navbar-submenu">
@@ -102,7 +102,7 @@
                                 <use xlink:href="/img/icons/panel.svg#ingredient"></use>
                             </svg>
                         </div>
-                        <p class='navbar-submenu__text'>Інгредієнти</p>
+                        <span class='navbar-submenu__text'>Інгредієнти</span>
                     </div>
                     <ul class="navbar-submenu__list">
                         <li class="navbar-submenu__item"><a href="#" class='navbar-submenu__link'>Аерогель</a></li>
@@ -126,7 +126,7 @@
                         <use xlink:href="/img/icons/panel.svg#tool"></use>
                     </svg>
                 </div>
-                <p class='main__text'>Інструменти</p>
+                <span class='main__text'>Інструменти</span>
             </a>
             <div class="main__form js--trigger-main-modal">
                 <div class="main__submenu navbar-submenu">
@@ -139,7 +139,7 @@
                                 <use xlink:href="/img/icons/panel.svg#tool"></use>
                             </svg>
                         </div>
-                        <p class='navbar-submenu__text'>Інструменти</p>
+                        <span class='navbar-submenu__text'>Інструменти</span>
                     </div>
                     <ul class="navbar-submenu__list">
                         <li class="navbar-submenu__item"><a href="#" class='navbar-submenu__link'>Аерогель</a></li>
@@ -163,7 +163,7 @@
                         <use xlink:href="/img/icons/panel.svg#dyes"></use>
                     </svg>
                 </div>
-                <p class='main__text'>Барвники</p>
+                <span class='main__text'>Барвники</span>
             </a>
             <div class="main__form js--trigger-main-modal">
                 <div class="main__submenu navbar-submenu">
@@ -176,7 +176,7 @@
                                 <use xlink:href="/img/icons/panel.svg#dyes"></use>
                             </svg>
                         </div>
-                        <p class='navbar-submenu__text'>Барвники</p>
+                        <span class='navbar-submenu__text'>Барвники</span>
                     </div>
                     <ul class="navbar-submenu__list">
                         <li class="navbar-submenu__item"><a href="#" class='navbar-submenu__link'>Аерогель</a></li>
@@ -200,7 +200,7 @@
                         <use xlink:href="/img/icons/panel.svg#package"></use>
                     </svg>
                 </div>
-                <p class='main__text'>Упаковка</p>
+                <span class='main__text'>Упаковка</span>
             </a>
             <div class="main__form js--trigger-main-modal">
                 <div class="main__submenu navbar-submenu">
@@ -213,7 +213,7 @@
                                 <use xlink:href="/img/icons/panel.svg#package"></use>
                             </svg>
                         </div>
-                        <p class='navbar-submenu__text'>Упаковка</p>
+                        <span class='navbar-submenu__text'>Упаковка</span>
                     </div>
                     <ul class="navbar-submenu__list">
                         <li class="navbar-submenu__item"><a href="#" class='navbar-submenu__link'>Аерогель</a></li>
@@ -237,7 +237,7 @@
                         <use xlink:href="/img/icons/panel.svg#equipment"></use>
                     </svg>
                 </div>
-                <p class='main__text'>Обладнання</p>
+                <span class='main__text'>Обладнання</span>
             </a>
             <div class="main__form js--trigger-main-modal">
                 <div class="main__submenu navbar-submenu">
@@ -250,7 +250,7 @@
                                 <use xlink:href="/img/icons/panel.svg#equipment"></use>
                             </svg>
                         </div>
-                        <p class='navbar-submenu__text'>Обладнання</p>
+                        <span class='navbar-submenu__text'>Обладнання</span>
                     </div>
                     <ul class="navbar-submenu__list">
                         <li class="navbar-submenu__item"><a href="#" class='navbar-submenu__link'>Аерогель</a></li>
@@ -274,7 +274,7 @@
                         <use xlink:href="/img/icons/panel.svg#else-category"></use>
                     </svg>
                 </div>
-                <p class='main__text'>Інші категорії</p>
+                <span class='main__text'>Інші категорії</span>
             </a>
             <div class="main__form js--trigger-main-modal">
                 <div class="main__submenu navbar-submenu">
@@ -287,7 +287,7 @@
                                 <use xlink:href="/img/icons/panel.svg#else-category"></use>
                             </svg>
                         </div>
-                        <p class='navbar-submenu__text'>Інші категорії</p>
+                        <span class='navbar-submenu__text'>Інші категорії</span>
                     </div>
                     <ul class="navbar-submenu__list">
                         <li class="navbar-submenu__item"><a href="#" class='navbar-submenu__link'>Аерогель</a></li>

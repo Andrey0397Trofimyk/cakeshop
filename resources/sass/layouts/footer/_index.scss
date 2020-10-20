@@ -29,10 +29,6 @@
             opacity: 0.8;
         }
     }
-    p,
-    a {
-        color: #fff;
-    }
     &__main {
         position: relative;
         display: flex;
@@ -49,24 +45,11 @@
             width: 100%;
         }
     }
-    &__online-shop {
-        .online-shop__icon {
-            fill: #ffffff;
-        }
-    }
-    &__real-shop {
-        .real-shop__icon {
-            fill: #ffffff;
-        }
-    }
     &__socials {
         position: absolute;
         bottom: 30px;
         left: 50%;
         transform: translate(-50%);
-        .socials__icon {
-            fill: #ffffff;
-        }
     }
     &__bottom {
         display: flex;
@@ -75,19 +58,20 @@
     }
     &__rights {
         padding: 30px 0;
+        color: #fff;
         font-size: 10px;
         order: 2;
     }
-    &__logo-studio {
-        padding: 30px 0 15px 0;
-        order: 1;
-        p {
-            font-size: 10px;
-            line-height: 18px;
-        }
-    }
-    .icon {
-        fill: #ffffff;
+}
+.logo-studio {
+    padding: 30px 0 15px 0;
+    order: 1;
+    &__caption {
+        display: block;
+        color: #fff;
+        font-size: 10px;
+        line-height: 18px;
+        text-align: center;
     }
 }
 @media #{$screen-min-576} {
@@ -95,9 +79,6 @@
         &__real-shop {
             flex-direction: row;
             align-items: flex-start;
-            .real-shop__place:first-child {
-                margin-right: 100px;
-            }
         }
         &__bottom {
             flex-direction: row;
@@ -109,10 +90,10 @@
             font-size: 12px;
             order: 1;
         }
-        &__logo-studio {
-            padding-top: 10px;
-            order: 2;
-        }
+    }
+    .logo-studio {
+        padding-top: 10px;
+        order: 2;
     }
 }
 
@@ -132,9 +113,6 @@
         &__real-shop {
             flex-direction: row;
             align-items: flex-start;
-            .real-shop__place:first-child {
-                margin-right: 50px;
-            }
         }
         &__socials {
             position: static;
@@ -144,11 +122,6 @@
 }
 @media #{$screen-min-1200} {
     .footer {
-        &__real-shop {
-            .real-shop__place:first-child {
-                margin-right: 100px;
-            }
-        }
         &__logo {
             width: 300px;
         }
@@ -156,11 +129,6 @@
 }
 @media #{$screen-min-1560} {
     .footer {
-        &__real-shop {
-            .real-shop__place:first-child {
-                margin-right: 200px;
-            }
-        }
         &__logo {
             width: 350px;
         }

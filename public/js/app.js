@@ -21213,56 +21213,6 @@ $(document).ready(function () {
 
 /***/ }),
 
-/***/ "./resources/js/base/seeWidthWindowForModal.js":
-/*!*****************************************************!*\
-  !*** ./resources/js/base/seeWidthWindowForModal.js ***!
-  \*****************************************************/
-/*! exports provided: seeWidthWindowForModal */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "seeWidthWindowForModal", function() { return seeWidthWindowForModal; });
-var seeWidthWindowForModal = function seeWidthWindowForModal() {
-  var obj = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
-  $(window).width() >= 992 ? obj.css("display", "none") : obj.css("display", "flex");
-};
-
-/***/ }),
-
-/***/ "./resources/js/base/setOverflowBodyScroll.js":
-/*!****************************************************!*\
-  !*** ./resources/js/base/setOverflowBodyScroll.js ***!
-  \****************************************************/
-/*! exports provided: setOverflowBodyScroll */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setOverflowBodyScroll", function() { return setOverflowBodyScroll; });
-var setOverflowBodyScroll = function setOverflowBodyScroll() {
-  var scroll = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-  $(window).scrollTop(0);
-
-  if (scroll) {
-    window.onscroll = function () {
-      window.scrollTo(0, 0);
-    };
-
-    $("body").css({// overflow: "hidden"
-      // margin: `0 ${mr}px 0 0`
-    });
-  } else {
-    window.onscroll = function () {};
-
-    $("body").css({// overflow: "auto"
-      // margin: `0 0 0 0`
-    });
-  }
-};
-
-/***/ }),
-
 /***/ "./resources/js/bootstrap.js":
 /*!***********************************!*\
   !*** ./resources/js/bootstrap.js ***!
@@ -21304,7 +21254,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _base_setOverflowBodyScroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../base/setOverflowBodyScroll */ "./resources/js/base/setOverflowBodyScroll.js");
+/* harmony import */ var _libs_setOverflowBodyScroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../libs/setOverflowBodyScroll */ "./resources/js/libs/setOverflowBodyScroll.js");
 
 $(document).on("click", ".js--trigger-icon", function (event) {
   event.preventDefault();
@@ -21312,12 +21262,14 @@ $(document).on("click", ".js--trigger-icon", function (event) {
       headerBurger = $(".header__burger"),
       headerWrapper = $(".header__wrapper"),
       mainList = $(".main__list");
+  $(this).toggleClass("active").siblings().fadeToggle(250);
 
   if ($(window).width() > 992) {
     onlineShop.css({
       "margin-left": $(".tell__button").offset().left - 160,
-      "margin-top": "120px"
+      "margin-top": "70px"
     });
+    $(this).hasClass("active") ? Object(_libs_setOverflowBodyScroll__WEBPACK_IMPORTED_MODULE_0__["setOverflowBodyScroll"])(true) : Object(_libs_setOverflowBodyScroll__WEBPACK_IMPORTED_MODULE_0__["setOverflowBodyScroll"])();
   } else {
     $(this).siblings().css({
       "margin-top": $(".header").innerHeight(),
@@ -21327,19 +21279,18 @@ $(document).on("click", ".js--trigger-icon", function (event) {
       margin: "0 auto"
     });
     headerBurger.removeClass("active-burger").parent().siblings().fadeOut();
+    $(this).hasClass("active") ? $("body").css("overflow", "hidden") : $("body").css("overflow", "auto");
   }
 
   headerWrapper.css("z-index", 3).find(".active").not($(this)).removeClass("active").siblings().fadeOut(250);
   mainList.find(".main__form").fadeOut(0).siblings().removeClass("active");
-  $(this).toggleClass("active").siblings().fadeToggle(250);
-  $(this).hasClass("active") ? Object(_base_setOverflowBodyScroll__WEBPACK_IMPORTED_MODULE_0__["setOverflowBodyScroll"])(true) : Object(_base_setOverflowBodyScroll__WEBPACK_IMPORTED_MODULE_0__["setOverflowBodyScroll"])();
 });
 $(document).on("click", ".js--dropdown-modal", function (event) {
   event.preventDefault();
 
   if ($(window).width() > 992 && $(event.target).attr("class") == $(this).attr("class")) {
     $(this).fadeOut(250).siblings().removeClass("active");
-    Object(_base_setOverflowBodyScroll__WEBPACK_IMPORTED_MODULE_0__["setOverflowBodyScroll"])();
+    Object(_libs_setOverflowBodyScroll__WEBPACK_IMPORTED_MODULE_0__["setOverflowBodyScroll"])();
   }
 });
 
@@ -21354,7 +21305,7 @@ $(document).on("click", ".js--dropdown-modal", function (event) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _base_setOverflowBodyScroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../base/setOverflowBodyScroll */ "./resources/js/base/setOverflowBodyScroll.js");
+/* harmony import */ var _libs_setOverflowBodyScroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../libs/setOverflowBodyScroll */ "./resources/js/libs/setOverflowBodyScroll.js");
 
 $(document).on("click", ".js--trigger-main-link", function (event) {
   event.preventDefault();
@@ -21378,14 +21329,14 @@ $(document).on("click", ".js--trigger-main-link", function (event) {
 
   mainList.find(".active").not($(this)).removeClass("active").siblings().fadeOut(250);
   $(this).toggleClass("active").siblings().fadeToggle(250);
-  $(this).hasClass("active") ? Object(_base_setOverflowBodyScroll__WEBPACK_IMPORTED_MODULE_0__["setOverflowBodyScroll"])(true) : Object(_base_setOverflowBodyScroll__WEBPACK_IMPORTED_MODULE_0__["setOverflowBodyScroll"])();
+  $(this).hasClass("active") ? Object(_libs_setOverflowBodyScroll__WEBPACK_IMPORTED_MODULE_0__["setOverflowBodyScroll"])(true) : Object(_libs_setOverflowBodyScroll__WEBPACK_IMPORTED_MODULE_0__["setOverflowBodyScroll"])();
 });
 $(document).on("click", ".js--trigger-main-modal", function (event) {
   event.preventDefault();
 
   if ($(event.target).attr("class") == $(this).attr("class")) {
     $(this).fadeOut(250).siblings().removeClass("active");
-    Object(_base_setOverflowBodyScroll__WEBPACK_IMPORTED_MODULE_0__["setOverflowBodyScroll"])();
+    Object(_libs_setOverflowBodyScroll__WEBPACK_IMPORTED_MODULE_0__["setOverflowBodyScroll"])();
   }
 });
 
@@ -21400,7 +21351,7 @@ $(document).on("click", ".js--trigger-main-modal", function (event) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _base_seeWidthWindowForModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../base/seeWidthWindowForModal */ "./resources/js/base/seeWidthWindowForModal.js");
+/* harmony import */ var _libs_seeWidthWindowForModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../libs/seeWidthWindowForModal */ "./resources/js/libs/seeWidthWindowForModal.js");
 
 $(document).on("click", ".js--trigger-burger", function (event) {
   event.preventDefault();
@@ -21442,8 +21393,8 @@ $(document).on("click", ".js--change-language", function (event) {
   event.preventDefault();
   var headerLanguage = $(".header__languages"),
       buttonLanguage = $(".navbar-info__language");
-  headerLanguage.find(".active-language").removeClass("active-language");
-  $(this).addClass("active-language");
+  headerLanguage.find(".active").removeClass("active");
+  $(this).addClass("active");
   buttonLanguage.text($(this).text());
 });
 $(document).on("click", ".js--show-language", function (event) {
@@ -21456,11 +21407,11 @@ $(document).on("click", ".js--show-language", function (event) {
 });
 $(document).on("click", ".js--dropdown-language", function (event) {
   if ($(event.target).attr("class") == $(this).attr("class")) {
-    $(this).fadeOut(250).siblings().removeClass("active"); // $(".header__wrapper").css("z-index", 3);
+    $(this).fadeOut(250).siblings().removeClass("active");
   }
 });
 $(window).on("resize", function () {
-  Object(_base_seeWidthWindowForModal__WEBPACK_IMPORTED_MODULE_0__["seeWidthWindowForModal"])($(".languages"));
+  Object(_libs_seeWidthWindowForModal__WEBPACK_IMPORTED_MODULE_0__["seeWidthWindowForModal"])($(".languages"));
 });
 
 /***/ }),
@@ -21501,6 +21452,49 @@ __webpack_require__(/*! ./actionListMain */ "./resources/js/layouts/actionListMa
 
 /***/ }),
 
+/***/ "./resources/js/libs/seeWidthWindowForModal.js":
+/*!*****************************************************!*\
+  !*** ./resources/js/libs/seeWidthWindowForModal.js ***!
+  \*****************************************************/
+/*! exports provided: seeWidthWindowForModal */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "seeWidthWindowForModal", function() { return seeWidthWindowForModal; });
+var seeWidthWindowForModal = function seeWidthWindowForModal() {
+  var obj = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+  $(window).width() >= 992 ? obj.css("display", "none") : obj.css("display", "flex");
+};
+
+/***/ }),
+
+/***/ "./resources/js/libs/setOverflowBodyScroll.js":
+/*!****************************************************!*\
+  !*** ./resources/js/libs/setOverflowBodyScroll.js ***!
+  \****************************************************/
+/*! exports provided: setOverflowBodyScroll */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setOverflowBodyScroll", function() { return setOverflowBodyScroll; });
+var setOverflowBodyScroll = function setOverflowBodyScroll() {
+  var scroll = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+  $(window).scrollTop(0);
+  console.log(scroll);
+
+  if (scroll) {
+    window.onscroll = function () {
+      window.scrollTo(0, 0);
+    };
+  } else {
+    window.onscroll = function () {};
+  }
+};
+
+/***/ }),
+
 /***/ "./resources/js/pages/index.js":
 /*!*************************************!*\
   !*** ./resources/js/pages/index.js ***!
@@ -21525,7 +21519,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _swiperToSingleTerm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./swiperToSingleTerm */ "./resources/js/pages/swiper/swiperToSingleTerm.js");
 
 
-var ourNews = new Swiper["default"](".our-news__slider-first", {
+var ourNews = new Swiper["default"](".our-news__slider", {
   direction: "horizontal",
   slidesPerView: 1.4,
   spaceBetween: 15,
@@ -21546,7 +21540,8 @@ var ourNews = new Swiper["default"](".our-news__slider-first", {
     },
     992: {
       slidesPerView: 4,
-      slidesPerColumn: 2
+      slidesPerColumn: 2,
+      slidesOffsetAfter: 0
     },
     1560: {
       slidesPerView: 5,
@@ -21554,9 +21549,8 @@ var ourNews = new Swiper["default"](".our-news__slider-first", {
     }
   }
 });
-Object(_swiperToLongTerm__WEBPACK_IMPORTED_MODULE_0__["resizeSliderColumn"])($(".our-news__slider-first"), 5); // popular-category
-
-var popularCategoryFisrt = new Swiper["default"](".popular-category__slider-first", {
+Object(_swiperToLongTerm__WEBPACK_IMPORTED_MODULE_0__["resizeSliderColumn"])($(".our-news__slider"), 5);
+var popularCategoryFisrt = new Swiper["default"](".popular-category__slider", {
   direction: "horizontal",
   slidesPerView: 1.4,
   slidesPerColumn: 2,
@@ -21579,7 +21573,8 @@ var popularCategoryFisrt = new Swiper["default"](".popular-category__slider-firs
     },
     992: {
       slidesPerView: 4,
-      slidesPerColumn: 1
+      slidesPerColumn: 1,
+      slidesOffsetAfter: 0
     },
     1560: {
       slidesPerView: 5,
@@ -21587,8 +21582,7 @@ var popularCategoryFisrt = new Swiper["default"](".popular-category__slider-firs
     }
   }
 });
-Object(_swiperToSingleTerm__WEBPACK_IMPORTED_MODULE_1__["resizeSliderRow"])($(".popular-category__slider-first")); // popular-product
-
+Object(_swiperToSingleTerm__WEBPACK_IMPORTED_MODULE_1__["resizeSliderRow"])($(".popular-category__slider"));
 var popularProduct = new Swiper["default"](".popular-products__slider", {
   direction: "horizontal",
   slidesPerView: 1.4,
@@ -21607,7 +21601,8 @@ var popularProduct = new Swiper["default"](".popular-products__slider", {
       slidesPerView: 3
     },
     992: {
-      slidesPerView: 4
+      slidesPerView: 4,
+      slidesOffsetAfter: 0
     },
     1560: {
       slidesPerView: 5

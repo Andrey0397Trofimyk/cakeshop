@@ -5,7 +5,7 @@
                 <svg class="navbar__icon icon">
                     <use xlink:href="/img/icons/panel.svg#food-print"></use>
                 </svg>
-                <p class='navbar__title'>Харчовий друк</p>
+                Харчовий продукт
             </a>
             <ul class='navbar__submenu submenu'>
                 <li class="submenu__item"><a href="#" class='submenu__link js--trigger-link-submenu'>Вафельная и сахарная печать</a></li>
@@ -19,7 +19,7 @@
                 <svg class="navbar__icon icon">
                     <use xlink:href="/img/icons/panel.svg#decor"></use>
                 </svg>
-                <p class='navbar__title'>Декор</p>
+                Декор
             </a>
             <ul class='navbar__submenu submenu'>
                 <li class="submenu__item"><a href="#" class='submenu__link js--trigger-link-submenu'>Килимки для айсінгом</a></li>
@@ -34,7 +34,7 @@
                 <svg class="navbar__icon icon">
                     <use xlink:href="/img/icons/panel.svg#ingredient"></use>
                 </svg>
-                <p class='navbar__title'>Інгредієнти</p>
+                Інгредієнти
             </a>
             <ul class='navbar__submenu submenu'>
                 <li class="submenu__item"><a href="#">Аерогель</a></li>
@@ -46,7 +46,7 @@
                 <svg class="navbar__icon icon">
                     <use xlink:href="/img/icons/panel.svg#tool"></use>
                 </svg>
-                <p class='navbar__title'>Інструменти</p>
+                Інструменти
             </a>
             <ul class='navbar__submenu submenu'>
                 <li class="submenu__item"><a href="#">Аерогель</a></li>
@@ -58,7 +58,7 @@
                 <svg class="navbar__icon icon">
                     <use xlink:href="/img/icons/panel.svg#dyes"></use>
                 </svg>
-                <p class='navbar__title'>Барвники</p>
+                Барвники
             </a>
             <ul class='navbar__submenu submenu'>
                 <li class="submenu__item"><a href="#">Аерогель</a></li>
@@ -70,7 +70,7 @@
                 <svg class="navbar__icon icon">
                     <use xlink:href="/img/icons/panel.svg#package"></use>
                 </svg>
-                <p class='navbar__title'>Упаковка</p>
+                Упаковка
             </a>
             <ul class='navbar__submenu submenu'>
                 <li class="submenu__item"><a href="#">Аерогель</a></li>
@@ -82,7 +82,7 @@
                 <svg class="navbar__icon icon">
                     <use xlink:href="/img/icons/panel.svg#equipment"></use>
                 </svg>
-                <p class='navbar__title'>Обладнання</p>
+                Обладнання
             </a>
             <ul class='navbar__submenu submenu'>
                 <li class="submenu__item"><a href="#">Аерогель</a></li>
@@ -94,7 +94,7 @@
                 <svg class="navbar__icon icon">
                     <use xlink:href="/img/icons/panel.svg#else-category"></use>
                 </svg>
-                <p class='navbar__title'>Інші категорії</p>
+                Інші категорії
             </a>
             <ul class='navbar__submenu submenu'>
                 <li class="submenu__item"><a href="#">Аерогель</a></li>

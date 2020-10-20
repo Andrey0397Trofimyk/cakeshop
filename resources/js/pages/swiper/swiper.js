@@ -1,7 +1,7 @@
 import { resizeSliderColumn } from "./swiperToLongTerm";
 import { resizeSliderRow } from "./swiperToSingleTerm";
 
-const ourNews = new Swiper.default(".our-news__slider-first", {
+const ourNews = new Swiper.default(".our-news__slider", {
     direction: "horizontal",
     slidesPerView: 1.4,
     spaceBetween: 15,
@@ -16,39 +16,32 @@ const ourNews = new Swiper.default(".our-news__slider-first", {
     breakpoints: {
         460: { slidesPerView: 2 },
         768: { slidesPerView: 3 },
-        992: { slidesPerView: 4, slidesPerColumn: 2 },
+        992: { slidesPerView: 4, slidesPerColumn: 2, slidesOffsetAfter: 0 },
         1560: { slidesPerView: 5, slidesPerColumn: 2 }
     }
 });
-resizeSliderColumn($(".our-news__slider-first"), 5);
+resizeSliderColumn($(".our-news__slider"), 5);
 
-// popular-category
-
-const popularCategoryFisrt = new Swiper.default(
-    ".popular-category__slider-first",
-    {
-        direction: "horizontal",
-        slidesPerView: 1.4,
-        slidesPerColumn: 2,
-        spaceBetween: 15,
-        watchOverflow: "true",
-        slidesPerColumnFill: "row",
-        slidesOffsetAfter: 80,
-        navigation: {
-            nextEl: ".popular-category__arrow--next",
-            prevEl: ".popular-category__arrow--prev"
-        },
-        breakpoints: {
-            460: { slidesPerView: 2, slidesPerColumn: 1 },
-            768: { slidesPerView: 3, slidesPerColumn: 1 },
-            992: { slidesPerView: 4, slidesPerColumn: 1 },
-            1560: { slidesPerView: 5, slidesPerColumn: 1 }
-        }
+const popularCategoryFisrt = new Swiper.default(".popular-category__slider", {
+    direction: "horizontal",
+    slidesPerView: 1.4,
+    slidesPerColumn: 2,
+    spaceBetween: 15,
+    watchOverflow: "true",
+    slidesPerColumnFill: "row",
+    slidesOffsetAfter: 80,
+    navigation: {
+        nextEl: ".popular-category__arrow--next",
+        prevEl: ".popular-category__arrow--prev"
+    },
+    breakpoints: {
+        460: { slidesPerView: 2, slidesPerColumn: 1 },
+        768: { slidesPerView: 3, slidesPerColumn: 1 },
+        992: { slidesPerView: 4, slidesPerColumn: 1, slidesOffsetAfter: 0 },
+        1560: { slidesPerView: 5, slidesPerColumn: 1 }
     }
-);
-resizeSliderRow($(".popular-category__slider-first"));
-
-// popular-product
+});
+resizeSliderRow($(".popular-category__slider"));
 
 const popularProduct = new Swiper.default(".popular-products__slider", {
     direction: "horizontal",
@@ -63,7 +56,7 @@ const popularProduct = new Swiper.default(".popular-products__slider", {
     breakpoints: {
         460: { slidesPerView: 2 },
         768: { slidesPerView: 3 },
-        992: { slidesPerView: 4 },
+        992: { slidesPerView: 4, slidesOffsetAfter: 0 },
         1560: { slidesPerView: 5 }
     }
 });

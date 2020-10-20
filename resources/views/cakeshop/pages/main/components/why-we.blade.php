@@ -1,13 +1,13 @@
 <section class="why-we">
     <div class="why-we__container container">
-        <div class="why-we__title">
-            <p>Чому ми?</p>
-        </div>
+        <span class="why-we__title">
+            Чому ми?
+        </span>
         <div class="why-we__card">
             <div class="why-we__form">
-                <div class="why-we__text">
-                    <p>Якісний товар</p>
-                </div>
+                <span class="why-we__text">
+                    Якісний товар
+                </span>
                 <div class="why-we__association">
                     <svg class='why-we__icon-background icon'>
                         <use xlink:href="/img/icons/panel.svg#quality-goods">
@@ -20,9 +20,9 @@
                 </div>
             </div>
             <div class="why-we__form">
-                <div class="why-we__text">
-                    <p>Доступні ціни</p>
-                </div>
+                <span class="why-we__text">
+                    Доступні ціни
+                </span>
                 <div class="why-we__association">
                     <svg class='why-we__icon-background icon'>
                         <use xlink:href="/img/icons/panel.svg#affordable-prices">
@@ -35,9 +35,9 @@
                 </div>
             </div>
             <div class="why-we__form">
-                <div class="why-we__text">
-                    <p>Швидка доставка</p>
-                </div>
+                <span class="why-we__text">
+                    Швидка доставка
+                </span>
                 <div class="why-we__association">
                     <svg class='why-we__icon-background icon'>
                         <use xlink:href="/img/icons/panel.svg#fast-delivery">
@@ -50,9 +50,9 @@
                 </div>
             </div>
             <div class="why-we__form">
-                <div class="why-we__text">
-                    <p>Високий сервіс</p>
-                </div>
+                <span class="why-we__text">
+                    Високий сервіс
+                </span>
                 <div class="why-we__association">
                     <svg class='why-we__icon-background icon'>
                         <use xlink:href="/img/icons/panel.svg#high-service">

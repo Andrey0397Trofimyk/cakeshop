@@ -15,9 +15,7 @@
         text-align: center;
         font-size: 18px;
         margin-bottom: 10px;
-        p {
-            margin-left: 5px;
-        }
+        margin-left: 5px;
     }
     &__form {
         display: flex;
@@ -32,21 +30,86 @@
         align-items: center;
         justify-content: flex-end;
         font-size: 18px;
-        svg {
-            width: 25px;
-            height: 25px;
-        }
-        &--no-viber {
-            svg {
-                display: none;
-            }
-        }
     }
     &__icon {
         width: 25px;
         height: 25px;
         &--marker {
             fill: #15a0b6;
+        }
+    }
+    &--white {
+        $tpl: ".real-shop";
+        #{$tpl} {
+            &__icon {
+                fill: #ffffff;
+            }
+            &__city,
+            &__adress {
+                color: #ffffff;
+            }
+            &__number {
+                .number {
+                    &__link {
+                        color: #ffffff;
+                    }
+                    &__icon {
+                        fill: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media #{$screen-min-576} {
+    .real-shop {
+        &--footer {
+            $tpl: ".real-shop";
+            #{$tpl} {
+                &__place:first-child {
+                    margin-right: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media #{$screen-min-992} {
+    .real-shop {
+        &--footer {
+            $tpl: ".real-shop";
+            #{$tpl} {
+                &__place:first-child {
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media #{$screen-min-1200} {
+    .real-shop {
+        &--footer {
+            $tpl: ".real-shop";
+            #{$tpl} {
+                &__place:first-child {
+                    margin-right: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media #{$screen-min-1560} {
+    .real-shop {
+        &--footer {
+            $tpl: ".real-shop";
+            #{$tpl} {
+                &__place:first-child {
+                    margin-right: 200px;
+                }
+            }
         }
     }
 }

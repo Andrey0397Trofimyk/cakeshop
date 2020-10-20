@@ -7,7 +7,7 @@
     </div>
     <div class="online-shop__form">
         @include('cakeshop.components.contacts.number',['class' => 'online-shop__number'])
-        @include('cakeshop.components.contacts.number',['class' => 'online-shop__number online-shop__number--no-viber'])
+        @include('cakeshop.components.contacts.number',['class' => 'online-shop__number number--no-viber'])
         @include('cakeshop.components.contacts.number',['class' => 'online-shop__number'])
     </div>
 </div>

@@ -1,7 +1,7 @@
 <setion class="popular-category">
     <div class="popular-category__container container">
         <div class="popular-category__title">
-            <p class='popular-category__text-title'>Популярні категорії</p>
+            <h2 class='popular-category__text-title'>Популярні категорії</h2>
             <div class="popular-category__arrows">
                 <button type='button' class='popular-category__arrow popular-category__arrow--prev'>
                     <svg class='popular-category__icon icon'>
@@ -15,16 +15,15 @@
                 </button>
             </div>
         </div>
-        <!-- На даний момент користуюсь без for Pretty ламає структуру -->
         <div class="popular-category__swiper">
-            <div class="popular-category__slider-first swiper-container">
+            <div class="popular-category__slider swiper-container">
                 <div class="swiper-wrapper">
                     <div class="popular-category__slide swiper-slide">
                         <a href="#" class="popular-category__link">
                             <div class="popular-category__card">
-                                <p class="popular-category__text">
+                                <span class="popular-category__text">
                                     Все для Macarons
-                                </p>
+                                </span>
                                 <div class="popular-category__background">
                                     <img src="/img/background/category-background.jpg" alt="background">
                                 </div>
@@ -34,9 +33,9 @@
                     <div class="popular-category__slide swiper-slide">
                         <a href="#" class="popular-category__link">
                             <div class="popular-category__card">
-                                <p class="popular-category__text">
+                                <span class="popular-category__text">
                                     Все для Macarons
-                                </p>
+                                </span>
                                 <div class="popular-category__background">
                                     <img src="/img/background/category-background.jpg" alt="background">
                                 </div>
@@ -46,9 +45,9 @@
                     <div class="popular-category__slide swiper-slide">
                         <a href="#" class="popular-category__link">
                             <div class="popular-category__card">
-                                <p class="popular-category__text">
+                                <span class="popular-category__text">
                                     Все для Macarons
-                                </p>
+                                </span>
                                 <div class="popular-category__background">
                                     <img src="/img/background/category-background.jpg" alt="background">
                                 </div>
@@ -58,9 +57,9 @@
                     <div class="popular-category__slide swiper-slide">
                         <a href="#" class="popular-category__link">
                             <div class="popular-category__card">
-                                <p class="popular-category__text">
+                                <span class="popular-category__text">
                                     Все для Macarons
-                                </p>
+                                </span>
                                 <div class="popular-category__background">
                                     <img src="/img/background/category-background.jpg" alt="background">
                                 </div>
@@ -70,9 +69,9 @@
                     <div class="popular-category__slide swiper-slide">
                         <a href="#" class="popular-category__link">
                             <div class="popular-category__card">
-                                <p class="popular-category__text">
+                                <span class="popular-category__text">
                                     Все для Macarons
-                                </p>
+                                </span>
                                 <div class="popular-category__background">
                                     <img src="/img/background/category-background.jpg" alt="background">
                                 </div>
@@ -82,9 +81,9 @@
                     <div class="popular-category__slide swiper-slide">
                         <a href="#" class="popular-category__link">
                             <div class="popular-category__card">
-                                <p class="popular-category__text">
+                                <span class="popular-category__text">
                                     Все для Macarons
-                                </p>
+                                </span>
                                 <div class="popular-category__background">
                                     <img src="/img/background/category-background.jpg" alt="background">
                                 </div>
@@ -94,9 +93,9 @@
                     <div class="popular-category__slide swiper-slide">
                         <a href="#" class="popular-category__link">
                             <div class="popular-category__card">
-                                <p class="popular-category__text">
+                                <span class="popular-category__text">
                                     Все для Macarons
-                                </p>
+                                </span>
                                 <div class="popular-category__background">
                                     <img src="/img/background/category-background.jpg" alt="background">
                                 </div>
@@ -106,9 +105,9 @@
                     <div class="popular-category__slide swiper-slide">
                         <a href="#" class="popular-category__link">
                             <div class="popular-category__card">
-                                <p class="popular-category__text">
+                                <span class="popular-category__text">
                                     Все для Macarons
-                                </p>
+                                </span>
                                 <div class="popular-category__background">
                                     <img src="/img/background/category-background.jpg" alt="background">
                                 </div>
@@ -118,9 +117,9 @@
                     <div class="popular-category__slide swiper-slide">
                         <a href="#" class="popular-category__link">
                             <div class="popular-category__card">
-                                <p class="popular-category__text">
+                                <span class="popular-category__text">
                                     Все для Macarons
-                                </p>
+                                </span>
                                 <div class="popular-category__background">
                                     <img src="/img/background/category-background.jpg" alt="background">
                                 </div>
@@ -130,7 +129,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="popular-category__back">
+        <div class="popular-category__back">
             <div class="popular-category__cake-back">
                 <svg class='popular-category__icon-back icon'>
                     <use xlink:href="/img/icons/panel.svg#cake-background">
@@ -141,6 +140,6 @@
                     <use xlink:href="/img/icons/panel.svg#crousan-background">
                 </svg>
             </div>
-        </div> -->
+        </div>
     </div>
 </setion>

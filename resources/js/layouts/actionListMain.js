@@ -1,4 +1,4 @@
-import { setOverflowBodyScroll } from "../base/setOverflowBodyScroll";
+import { setOverflowBodyScroll } from "../libs/setOverflowBodyScroll";
 
 $(document).on("click", ".js--trigger-main-link", function(event) {
     event.preventDefault();

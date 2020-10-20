@@ -1,8 +1,8 @@
 <header class='header'>
     <div class="header__container container">
         <div class="header__wrapper">
-            <button type='button' class='header__burger js--trigger-burger'>
-                <span></span>
+            <button type='button' class='header__burger burger js--trigger-burger'>
+                <span class='burger__line'></span>
             </button>
             <a class='header__logo' href="#">
                 <img src="img/logo.svg" alt="logo">

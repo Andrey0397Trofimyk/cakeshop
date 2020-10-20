@@ -1,4 +1,4 @@
-import { seeWidthWindowForModal } from "../base/seeWidthWindowForModal";
+import { seeWidthWindowForModal } from "../libs/seeWidthWindowForModal";
 
 $(document).on("click", ".js--trigger-burger", function(event) {
     event.preventDefault();
@@ -75,9 +75,9 @@ $(document).on("click", ".js--change-language", function(event) {
     const headerLanguage = $(".header__languages"),
         buttonLanguage = $(".navbar-info__language");
 
-    headerLanguage.find(".active-language").removeClass("active-language");
-    $(this).addClass("active-language");
+    headerLanguage.find(".active").removeClass("active");
 
+    $(this).addClass("active");
     buttonLanguage.text($(this).text());
 });
 
@@ -102,7 +102,6 @@ $(document).on("click", ".js--dropdown-language", function(event) {
             .fadeOut(250)
             .siblings()
             .removeClass("active");
-        // $(".header__wrapper").css("z-index", 3);
     }
 });
 

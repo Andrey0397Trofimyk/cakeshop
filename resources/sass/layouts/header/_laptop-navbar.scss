@@ -48,14 +48,15 @@
         &__signboard-link {
             display: flex;
             align-items: center;
-            p {
-                font-size: 40px;
-                line-height: 50px;
-            }
-            svg {
-                width: 40px;
-                height: 40px;
-                margin-left: 60px;
+            font-size: 40px;
+            line-height: 50px;
+            $tpl: ".laptop-navbar";
+            #{$tpl} {
+                &__icon {
+                    width: 40px;
+                    height: 40px;
+                    margin-left: 60px;
+                }
             }
         }
     }

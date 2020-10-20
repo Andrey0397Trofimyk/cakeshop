@@ -6,10 +6,8 @@
     &__swiper {
         overflow: hidden;
     }
-    &__slider-first,
-    &__slider-second {
-        height: auto; //650px
-        // height: 50px;
+    &__slider {
+        height: auto;
         margin: 20px 0;
     }
     &__slide {
@@ -65,9 +63,6 @@
 }
 @media #{$screen-min-768} {
     .our-news {
-        &__slider-first {
-            // height: 650px;
-        }
         &__slider-second {
             display: none;
         }
@@ -77,6 +72,13 @@
     .our-news {
         &__text {
             font-size: 26px;
+        }
+    }
+}
+@media #{$screen-min-1560} {
+    .our-news {
+        &__text {
+            font-size: 33px;
         }
     }
 }

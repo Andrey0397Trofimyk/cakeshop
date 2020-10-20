@@ -5,9 +5,9 @@
     &__link {
         font-size: 18px;
         margin-right: 10px;
-    }
-    .active-language {
-        font-weight: bold;
+        &.active {
+            font-weight: bold;
+        }
     }
 }
 @media #{$screen-min-992} {

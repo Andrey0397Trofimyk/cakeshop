@@ -11,33 +11,32 @@
     &__link {
         display: flex;
         align-items: center;
+        width: 300px;
         padding: 8px 0;
-    }
-    .active-navbar-link {
-        svg {
-            fill: #15a0b6;
-        }
-        p {
+        font-size: 19px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        &.active-navbar-link {
             font-weight: 400;
             color: #15a0b6;
+            $tpl: ".navbar";
+            #{$tpl} {
+                &__icon {
+                    fill: #15a0b6;
+                }
+            }
         }
     }
     &__submenu {
         display: none;
         overflow: hidden;
     }
-    .active-submenu {
-        display: none;
-    }
     &__icon {
+        min-width: 25px;
         width: 25px;
         height: 25px;
         margin: 0 10px;
-    }
-    &__title {
-        width: 200px;
-        font-size: 19px;
-        overflow: hidden;
     }
 }
 .submenu {
@@ -49,12 +48,8 @@
     }
     &__link {
         font-size: 16px;
-    }
-    .active-submenu-link {
-        font-weight: bold;
-    }
-}
-@media #{$screen-min-420} {
-    .submenu {
+        &.active-submenu-link {
+            font-weight: bold;
+        }
     }
 }

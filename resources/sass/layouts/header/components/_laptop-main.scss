@@ -5,11 +5,6 @@
         justify-content: center;
         flex-wrap: wrap;
         margin: 0 auto;
-        &:nth-child(2) {
-            .main__icon--back {
-                fill: #fff;
-            }
-        }
     }
     &__item {
         display: flex;
@@ -19,10 +14,13 @@
     &__item:first-child,
     &__item:last-child {
         width: 100%;
-        .main__link {
-            max-width: 300px;
-            width: 200px;
-            margin: 0 auto;
+        $tpl: ".main";
+        #{$tpl} {
+            &__link {
+                max-width: 300px;
+                width: 200px;
+                margin: 0 auto;
+            }
         }
     }
     &__link {
@@ -114,8 +112,6 @@
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
-        }
-        &__text {
             font-weight: 400;
         }
         &__list {
@@ -158,14 +154,17 @@
             position: relative;
             flex: 0 0 11%;
             width: 100%;
-            .main__link {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: auto;
-                padding: 10px 0;
+            $tpl: ".main";
+            #{$tpl} {
+                &__link {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: auto;
+                    padding: 10px 0;
+                }
             }
             &:before {
                 content: "";
@@ -192,32 +191,37 @@
         }
         &__link {
             &:hover {
-                .main__icon:last-child {
-                    transform: translateY(-5px);
-                }
-                p {
-                    color: $main;
-                }
-            }
-        }
-        .active {
-            .main__icon:first-child {
-                opacity: 0.4;
-            }
-            .main__icon:last-child {
-                transform: translateY(5px);
-            }
-            p {
                 color: $main;
+                $tpl: ".main";
+                #{$tpl} {
+                    &__icon:last-child {
+                        transform: translateY(-5px);
+                    }
+                }
+            }
+            &.active {
+                color: $main;
+                $tpl: ".main";
+                #{$tpl} {
+                    &__icon:first-child {
+                        opacity: 0.4;
+                    }
+                    &__icon:last-child {
+                        transform: translateY(5px);
+                    }
+                }
             }
         }
         &__association {
             position: relative;
             width: 42px;
             height: 42px;
-            svg:first-child {
-                width: 55px;
-                height: 55px;
+            $tpl: ".main";
+            #{$tpl} {
+                &__icon:first-child {
+                    width: 55px;
+                    height: 55px;
+                }
             }
         }
         &__text {
@@ -269,9 +273,12 @@
         &__association {
             width: 50px;
             height: 50px;
-            svg:first-child {
-                width: 59px;
-                height: 59px;
+            $tpl: ".main";
+            #{$tpl} {
+                &__icon:first-child {
+                    width: 59px;
+                    height: 59px;
+                }
             }
         }
         &__text {

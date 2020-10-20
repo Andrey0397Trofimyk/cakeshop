@@ -1,4 +1,4 @@
-import { setOverflowBodyScroll } from "../base/setOverflowBodyScroll";
+import { setOverflowBodyScroll } from "../libs/setOverflowBodyScroll";
 
 $(document).on("click", ".js--trigger-icon", function(event) {
     event.preventDefault();
@@ -8,11 +8,20 @@ $(document).on("click", ".js--trigger-icon", function(event) {
         headerWrapper = $(".header__wrapper"),
         mainList = $(".main__list");
 
+    $(this)
+        .toggleClass("active")
+        .siblings()
+        .fadeToggle(250);
+
     if ($(window).width() > 992) {
         onlineShop.css({
             "margin-left": $(".tell__button").offset().left - 160,
-            "margin-top": "120px"
+            "margin-top": "70px"
         });
+
+        $(this).hasClass("active")
+            ? setOverflowBodyScroll(true)
+            : setOverflowBodyScroll();
     } else {
         $(this)
             .siblings()
@@ -26,6 +35,10 @@ $(document).on("click", ".js--trigger-icon", function(event) {
             .parent()
             .siblings()
             .fadeOut();
+
+        $(this).hasClass("active")
+            ? $("body").css("overflow", "hidden")
+            : $("body").css("overflow", "auto");
     }
 
     headerWrapper
@@ -41,15 +54,6 @@ $(document).on("click", ".js--trigger-icon", function(event) {
         .fadeOut(0)
         .siblings()
         .removeClass("active");
-
-    $(this)
-        .toggleClass("active")
-        .siblings()
-        .fadeToggle(250);
-
-    $(this).hasClass("active")
-        ? setOverflowBodyScroll(true)
-        : setOverflowBodyScroll();
 });
 
 $(document).on("click", ".js--dropdown-modal", function(event) {

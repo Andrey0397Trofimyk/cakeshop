@@ -19,10 +19,13 @@
     &__button {
         position: relative;
         z-index: 10;
-    }
-    .active {
-        svg {
-            fill: #dbdbdb;
+        &.active {
+            $tpl: ".tell";
+            #{$tpl} {
+                &__icon {
+                    fill: #dbdbdb;
+                }
+            }
         }
     }
     &__icon {
@@ -55,9 +58,14 @@
         &__invition {
             display: none;
         }
-        .active {
-            svg {
-                fill: #fff;
+        &__button {
+            &.active {
+                $tpl: ".tell";
+                #{$tpl} {
+                    &__icon {
+                        fill: #ffffff;
+                    }
+                }
             }
         }
         &__online-shop {

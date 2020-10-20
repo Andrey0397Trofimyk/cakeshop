@@ -6,6 +6,14 @@
         height: 32px;
         margin-right: 8px;
     }
+    &--white {
+        $tpl: ".socials";
+        #{$tpl} {
+            &__icon {
+                fill: #ffffff;
+            }
+        }
+    }
 }
 @media #{$screen-min-1200} {
     .socials {

@@ -4,7 +4,7 @@
         margin: 60px auto 60px auto;
     }
     &__swiper {
-        margin-top: 10px;
+        margin-top: 20px;
         overflow: hidden;
     }
     &__slider-first,
@@ -50,6 +50,13 @@
         }
         &__arrows {
             padding-right: 0;
+        }
+    }
+}
+@media #{$screen-min-1560} {
+    .popular-products {
+        &__text {
+            font-size: 33px;
         }
     }
 }

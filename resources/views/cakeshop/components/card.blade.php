@@ -9,11 +9,10 @@
     </div>
     <div class="card__info">
         <div class="card__price">
-            <span>98</span>
-            <p>грн</p>
+            <span class='card__suma'>98</span> грн
         </div>
         <div class="card__basket">
-            <button type='button'>
+            <button type='button' class='card__button'>
                 <svg class='card__icon icon'>
                     <use xlink:href="/img/icons/panel.svg#basket">
                 </svg>
