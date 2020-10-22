@@ -1,7 +1,7 @@
 <div class="{{$class}} card">
     <div class="card__image">
         <a href="#" class='card__link'>
-            <img src="/img/product/card.jpg" alt="">
+            <img src="/img/product/card.jpg" alt="card" class='card__img'>
         </a>
     </div>
     <div class="card__text">

@@ -187,32 +187,23 @@
 @media #{$screen-min-992} {
     .header {
         &__dropdown {
-            position: static;
-            display: flex !important;
+            position: relative;
+            display: block !important;
             height: 30px !important;
-            padding-top: 0px;
             margin-top: 0 !important;
             overflow: hidden;
         }
-        &__navbar {
-            display: none;
-        }
-        &__navbar-info {
-            margin-top: -23px;
-        }
-        &__choice-viber-navbar {
-            display: none;
-        }
-        &__socials {
+        &__choice-viber-navbar,
+        &__navbar,
+        &__socials,
+        &__burger,
+        &__check-opt {
             display: none;
         }
         &__logo {
             width: 230px;
             height: 70px;
             padding-top: 10px;
-        }
-        &__burger {
-            display: none;
         }
         &__basket {
             margin-left: 10px;

@@ -14,8 +14,8 @@ const ourNews = new Swiper.default(".our-news__slider", {
         prevEl: ".our-news__arrow--prev"
     },
     breakpoints: {
-        460: { slidesPerView: 2 },
-        768: { slidesPerView: 3 },
+        460: { slidesPerView: 2, slidesPerColumn: 1 },
+        768: { slidesPerView: 3, slidesPerColumn: 1 },
         992: { slidesPerView: 4, slidesPerColumn: 2, slidesOffsetAfter: 0 },
         1560: { slidesPerView: 5, slidesPerColumn: 2 }
     }
@@ -48,7 +48,7 @@ const popularProduct = new Swiper.default(".popular-products__slider", {
     slidesPerView: 1.4,
     spaceBetween: 15,
     watchOverflow: "true",
-    slidesOffsetAfter: 80,
+    // slidesOffsetAfter: 80,
     navigation: {
         nextEl: ".popular-products__arrow--prev",
         prevEl: ".popular-products__arrow--next"

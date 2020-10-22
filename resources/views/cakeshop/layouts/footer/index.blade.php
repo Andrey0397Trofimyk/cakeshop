@@ -2,8 +2,8 @@
     <div class="footer__container container">
         <div class="footer__main">
             <div class="footer__logo-info">
-                <a class='footer__logo' href="#">
-                    <img src="img/logo-white.svg" alt="logo">
+                <a href="#" target="_blank" class='footer__logo'>
+                    <img src="img/logo-white.svg" alt="logo" class='footer__img'>
                 </a>
                 @include('cakeshop.components.socials',['class' => 'footer__socials socials--white'])
             </div>
@@ -15,7 +15,7 @@
                 <span>© Всі права захищені 2020</span>
             </div>
             <div class="footer__logo-studio logo-studio">
-                <a href="https://webmaestro.com.ua" class='logo-studio__link'>
+                <a href="https://webmaestro.com.ua" target="_blank" class='logo-studio__link'>
                     <img src="img/webmaestro.svg" alt="webmaestro">
                     <span class='logo-studio__caption'>розробка та розкрутка сайтів</span>
                 </a>

@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="information__image">
-            <img src="/img/information-image.jpg" alt="information-image">
+            <img src="/img/information-image.jpg" alt="information-image" class='information__img'>
         </div>
         <div class="information__background">
             <svg class='information__icon icon'>

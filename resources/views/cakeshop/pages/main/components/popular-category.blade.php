@@ -25,7 +25,7 @@
                                     Все для Macarons
                                 </span>
                                 <div class="popular-category__background">
-                                    <img src="/img/background/category-background.jpg" alt="background">
+                                    <img src="/img/background/category-background.jpg" alt="background" class='popular-category__img'>
                                 </div>
                             </div>
                         </a>
@@ -37,7 +37,7 @@
                                     Все для Macarons
                                 </span>
                                 <div class="popular-category__background">
-                                    <img src="/img/background/category-background.jpg" alt="background">
+                                    <img src="/img/background/category-background.jpg" alt="background" class='popular-category__img'>
                                 </div>
                             </div>
                         </a>
@@ -49,7 +49,7 @@
                                     Все для Macarons
                                 </span>
                                 <div class="popular-category__background">
-                                    <img src="/img/background/category-background.jpg" alt="background">
+                                    <img src="/img/background/category-background.jpg" alt="background" class='popular-category__img'>
                                 </div>
                             </div>
                         </a>
@@ -61,7 +61,7 @@
                                     Все для Macarons
                                 </span>
                                 <div class="popular-category__background">
-                                    <img src="/img/background/category-background.jpg" alt="background">
+                                    <img src="/img/background/category-background.jpg" alt="background" class='popular-category__img'>
                                 </div>
                             </div>
                         </a>
@@ -73,7 +73,7 @@
                                     Все для Macarons
                                 </span>
                                 <div class="popular-category__background">
-                                    <img src="/img/background/category-background.jpg" alt="background">
+                                    <img src="/img/background/category-background.jpg" alt="background" class='popular-category__img'>
                                 </div>
                             </div>
                         </a>
@@ -85,7 +85,7 @@
                                     Все для Macarons
                                 </span>
                                 <div class="popular-category__background">
-                                    <img src="/img/background/category-background.jpg" alt="background">
+                                    <img src="/img/background/category-background.jpg" alt="background" class='popular-category__img'>
                                 </div>
                             </div>
                         </a>
@@ -97,7 +97,7 @@
                                     Все для Macarons
                                 </span>
                                 <div class="popular-category__background">
-                                    <img src="/img/background/category-background.jpg" alt="background">
+                                    <img src="/img/background/category-background.jpg" alt="background" class='popular-category__img'>
                                 </div>
                             </div>
                         </a>
@@ -109,7 +109,7 @@
                                     Все для Macarons
                                 </span>
                                 <div class="popular-category__background">
-                                    <img src="/img/background/category-background.jpg" alt="background">
+                                    <img src="/img/background/category-background.jpg" alt="background" class='popular-category__img'>
                                 </div>
                             </div>
                         </a>
@@ -121,7 +121,7 @@
                                     Все для Macarons
                                 </span>
                                 <div class="popular-category__background">
-                                    <img src="/img/background/category-background.jpg" alt="background">
+                                    <img src="/img/background/category-background.jpg" alt="background" class='popular-category__img'>
                                 </div>
                             </div>
                         </a>

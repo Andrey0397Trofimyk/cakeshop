@@ -5,8 +5,7 @@ $(document).on("click", ".js--trigger-icon", function(event) {
 
     const onlineShop = $(".tell__online-shop"),
         headerBurger = $(".header__burger"),
-        headerWrapper = $(".header__wrapper"),
-        mainList = $(".main__list");
+        headerWrapper = $(".header__wrapper");
 
     $(this)
         .toggleClass("active")
@@ -29,7 +28,9 @@ $(document).on("click", ".js--trigger-icon", function(event) {
                 "margin-top": $(".header").innerHeight(),
                 height: `calc(100vh - ${$(".header").innerHeight()}px)`
             });
+
         onlineShop.css({ margin: "0 auto" });
+
         headerBurger
             .removeClass("active-burger")
             .parent()
@@ -48,12 +49,6 @@ $(document).on("click", ".js--trigger-icon", function(event) {
         .removeClass("active")
         .siblings()
         .fadeOut(250);
-
-    mainList
-        .find(".main__form")
-        .fadeOut(0)
-        .siblings()
-        .removeClass("active");
 });
 
 $(document).on("click", ".js--dropdown-modal", function(event) {
@@ -68,5 +63,17 @@ $(document).on("click", ".js--dropdown-modal", function(event) {
             .removeClass("active");
 
         setOverflowBodyScroll();
+    }
+});
+
+$(document).on("click", ".header, .laptop-navbar", function(event) {
+    if ($(this).attr("class") !== "laptop-navbar") {
+        const mainList = $(".main__list");
+
+        mainList
+            .find(".main__form")
+            .fadeOut(250)
+            .siblings()
+            .removeClass("active");
     }
 });

@@ -49,11 +49,11 @@
     }
     &__background {
         overflow: hidden;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
     &__cake-back {
         position: absolute;

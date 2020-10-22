@@ -4,7 +4,7 @@
             <button type='button' class='header__burger burger js--trigger-burger'>
                 <span class='burger__line'></span>
             </button>
-            <a class='header__logo' href="#">
+            <a href="#" target="_blank" class='header__logo'>
                 <img src="img/logo.svg" alt="logo">
             </a>
             @include('cakeshop.components.basket',['class' => 'header__basket'])

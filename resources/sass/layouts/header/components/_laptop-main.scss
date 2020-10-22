@@ -34,7 +34,7 @@
         overflow: hidden;
     }
     &__text {
-        width: 100%;
+        width: 110px;
         margin-left: auto;
         white-space: nowrap;
         overflow: hidden;
@@ -47,9 +47,9 @@
     }
     &__association {
         position: relative;
-        width: 33px;
-        height: 33px;
-        min-width: 33px;
+        width: 30px;
+        height: 30px;
+        min-width: 25px;
     }
     &__icon {
         position: absolute;
@@ -262,6 +262,13 @@
         }
         &__icon {
             width: 100px;
+        }
+    }
+}
+@media #{$screen-min-1080} {
+    .main {
+        &__text {
+            width: 120px;
         }
     }
 }

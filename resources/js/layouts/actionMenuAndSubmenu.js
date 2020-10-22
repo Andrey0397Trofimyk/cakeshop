@@ -6,8 +6,7 @@ $(document).on("click", ".js--trigger-burger", function(event) {
     const headerWrapper = $(".header__wrapper"),
         headerBurger = $(".header__burger"),
         headerDropdown = $(".header__dropdown"),
-        languageList = $(".languages"),
-        mainList = $(".main__list");
+        languageList = $(".languages");
 
     headerDropdown.css({
         "margin-top": $(".header").innerHeight(),
@@ -20,12 +19,6 @@ $(document).on("click", ".js--trigger-burger", function(event) {
         .siblings()
         .fadeOut();
 
-    mainList
-        .find(".main__form")
-        .fadeOut(0)
-        .siblings()
-        .removeClass("active");
-
     languageList.find(".languages__wrapper").css("margin", 0);
 
     !$(this).hasClass("active-burger")
@@ -33,6 +26,7 @@ $(document).on("click", ".js--trigger-burger", function(event) {
         : $("body").css("overflow", "auto");
 
     headerBurger.toggleClass("active-burger");
+
     headerDropdown.fadeToggle(250);
 });
 
@@ -66,6 +60,7 @@ $(document).on("click", ".js--trigger-link-submenu", function(event) {
     const headerList = $(".navbar__list");
 
     headerList.find(".submenu__link").removeClass("active-submenu-link");
+
     $(this).addClass("active-submenu-link");
 });
 
@@ -78,19 +73,23 @@ $(document).on("click", ".js--change-language", function(event) {
     headerLanguage.find(".active").removeClass("active");
 
     $(this).addClass("active");
+
     buttonLanguage.text($(this).text());
 });
 
 $(document).on("click", ".js--show-language", function(event) {
     $(".header__wrapper").css("z-index", 1);
 
-    const language = $(".languages");
+    const language = $(".languages"),
+        formLanguage = $(".header__check-opt");
+
+    formLanguage.css("display", "block");
 
     language
         .find(".languages__wrapper")
         .css({
             "margin-left": $(".navbar-info__language").offset().left - 10,
-            "margin-top": "30px"
+            "margin-top": "40px"
         })
         .parent()
         .fadeToggle(250);
@@ -98,6 +97,10 @@ $(document).on("click", ".js--show-language", function(event) {
 
 $(document).on("click", ".js--dropdown-language", function(event) {
     if ($(event.target).attr("class") == $(this).attr("class")) {
+        const formLanguage = $(".header__check-opt");
+
+        formLanguage.css("display", "none");
+
         $(this)
             .fadeOut(250)
             .siblings()
@@ -107,4 +110,10 @@ $(document).on("click", ".js--dropdown-language", function(event) {
 
 $(window).on("resize", function() {
     seeWidthWindowForModal($(".languages"));
+
+    if ($(window).width() < 992) {
+        $(".header__check-opt").css("display", "flex");
+    } else if ($(window).width() >= 992) {
+        $(".header__check-opt").css("display", "none");
+    }
 });

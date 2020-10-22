@@ -6,12 +6,10 @@
         border-radius: 10px;
         overflow: hidden;
     }
-    &__link {
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
     &__text {
         padding: 10px 0 0 10px;
@@ -27,11 +25,11 @@
     }
     &__price {
         display: flex;
-        align-items: center;
-        align-self: flex-end;
+        align-items: flex-end;
         height: 100%;
         margin-right: 30px;
         font-weight: 300;
+        margin-bottom: 5px;
         $tpl: ".card";
         #{$tpl} {
             &__suma {

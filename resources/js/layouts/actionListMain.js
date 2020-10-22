@@ -41,6 +41,7 @@ $(document).on("click", ".js--trigger-main-link", function(event) {
 
 $(document).on("click", ".js--trigger-main-modal", function(event) {
     event.preventDefault();
+
     if ($(event.target).attr("class") == $(this).attr("class")) {
         $(this)
             .fadeOut(250)
